@@ -34,7 +34,7 @@ var category = document.getElementById('bmi-kategoria');
             //display data for user
             if(calcResult) {
                 var finalRes = document.getElementById('bmi-ertek').innerHTML = Math.round(calcResult);
-                console.log(finalRes);
+                //display category
                 if (finalRes < 18.5) {
                     category.innerHTML = "Sovány";
                 }else if (finalRes >= 18.5 && finalRes < 25) {
@@ -50,4 +50,3 @@ var category = document.getElementById('bmi-kategoria');
             resultDisp.style.display="none";
         }
     })
-//display category
